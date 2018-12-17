@@ -1,0 +1,15 @@
+body {
+    background-image: url("https://s3.amazonaws.com/nikeinc/assets/6472/Nike_New_Orleans_Track_Joe_Brown_Park_hd_1600.jpg?1326217154");
+}
+
+.nombre {
+    font-size: 4em;
+    line-height:1em;
+    color: white;
+}
+
+.pad {
+    padding: 10vh;
+    color: white;
+}
+
