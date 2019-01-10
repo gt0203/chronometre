@@ -1,3 +1,4 @@
+
 window.onload = function () {
   // On déclare les variables
     var secondes = 00; 
@@ -19,6 +20,12 @@ window.onload = function () {
     
       boutonStop.onclick = function() {
          clearInterval(Interval);
+         localStorage.setItem("minutes", minutes);
+         localStorage.getItem(minutes);
+         localStorage.setItem("secondes", secondes);
+         localStorage.getItem(secondes);
+         localStorage.setItem("milisecondes", number);
+         localStorage.getItem(number);
     }
     
   
@@ -30,6 +37,12 @@ window.onload = function () {
         appendMinutes.innerHTML = minutes;
         appendnumber.innerHTML = number;
         appendSecondes.innerHTML = secondes;
+        localStorage.removeItem("minutes", minutes);
+        localStorage.removeItem(number);
+        localStorage.removeItem("secondes", secondes);
+        localStorage.removeItem(number);
+        localStorage.removeItem("milisecondes", number);
+        localStorage.removeItem(number);
     }
     
      
@@ -73,6 +86,4 @@ window.onload = function () {
     }
     
   
-  }
-
-  
+}
