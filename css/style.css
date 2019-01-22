@@ -1,7 +1,7 @@
 body {
     background-color: white;
     background-repeat: no-repeat;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .nombre {
@@ -23,8 +23,58 @@ a:hover {
     background-color: #343a40;
     height: 100%;
     color: white;
-    position:absolute;
+    position: absolute;
     bottom:0;
     width:100%;
     height:60px;
+}
+
+.savetemps {
+    text-align: center;
+}
+
+.derniertemps {
+    margin-top: 2%;
+}
+
+.alert{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    margin-top: 2%;
+}
+
+#boardTime {
+    list-style: none;
+}
+
+#boardName {
+    list-style: none;
+}
+
+li {
+    width: 8em;
+    border-top: 2px solid #343a40;
+    border-left: 2px solid #343a40;
+    border-right: 2px solid #343a40;
+}
+
+.title {
+    background-color: #343a40;
+    color: white;
+}
+
+li:last-child {
+    border-bottom: 2px solid #343a40;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+}
+
+.title-time {
+    margin-right: 40px; 
 }
