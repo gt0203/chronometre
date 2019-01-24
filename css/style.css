@@ -23,10 +23,11 @@ a:hover {
     background-color: #343a40;
     height: 100%;
     color: white;
-    position: absolute;
+    position: sticky;
     bottom:0;
     width:100%;
     height:60px;
+    margin-top: 11.77%;
 }
 
 .savetemps {
@@ -48,6 +49,7 @@ a:hover {
 
 #boardTime {
     list-style: none;
+    margin-right: 40px;
 }
 
 #boardName {
@@ -56,9 +58,9 @@ a:hover {
 
 li {
     width: 8em;
-    border-top: 2px solid #343a40;
-    border-left: 2px solid #343a40;
-    border-right: 2px solid #343a40;
+    list-style: none;
+    background-color: #343a40;
+    color: white;
 }
 
 .title {
@@ -77,4 +79,13 @@ li:last-child {
 
 .title-time {
     margin-right: 40px; 
+}
+
+@media print {
+    .beHidden {
+        display: none;
+    }
+    * {
+        color: black !important;
+    }
 }
